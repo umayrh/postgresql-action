@@ -1,6 +1,6 @@
-name: 'Setup PostgreSQL with PostgreSQL extensions and unprivileged user'
-description: 'Setups PostgreSQL database with unprivileged postgres user and PostgreSQL extensions.'
-author: 'Daniel Marynicz'
+name: 'Setup PostgreSQL with PostgreSQL extensions in the default database'
+description: 'Setups PostgreSQL database with unprivileged postgres user and PostgreSQL extensions in the default database.'
+author: 'Umayr Hassan, after Daniel Marynicz'
 branding:
   icon: 'database'
   color: 'blue'
@@ -26,7 +26,7 @@ inputs:
     required: false
   postgres_extensions:
     required: false
-    description: 'POSTGRES_EXTENSIONS - List of postgres extensions separated by space to install in template1 database'
+    description: 'POSTGRES_EXTENSIONS - List of postgres extensions separated by space to install in the "public" database'
   app_user:
     required: false
     description: 'APP_USER - unprivileged postgres user'
