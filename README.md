@@ -36,7 +36,7 @@ Setups PostgreSQL database  with unprivileged postgres user and PostgreSQL exten
 
 ### `postgres_extensions`
 
-* POSTGRES_EXTENSIONS - List of postgres extensions separated by space to install in template1 database.
+* POSTGRES_EXTENSIONS - List of postgres extensions separated by space to install in the 'public' database.
 * Default value is empty
 * Example: `uuid-ossp ltree`
 
