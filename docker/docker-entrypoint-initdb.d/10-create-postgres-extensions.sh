@@ -15,7 +15,7 @@ for extension in "${extensions[@]}"
 do
   extension=$(echo ${extension} | xargs)
   psql -v ON_ERROR_STOP=1 \
-      --dbname "template1" \
+      --dbname "postgres" \
       --username="$user" <<-EOSQL
       CREATE EXTENSION IF NOT EXISTS "${extension}";
 EOSQL
